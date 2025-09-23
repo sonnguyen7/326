@@ -6,8 +6,8 @@ static void *child(void *ignored){
 while (1){ // this function allows infinite loops
    sleep(3);
    printf("Child is done sleeping 3 seconds.\n");
-   return NULL;
    }
+   return NULL;
 }
 
 int main(int argc, char *argv[]){
@@ -18,7 +18,7 @@ int main(int argc, char *argv[]){
       fprintf(stderr, "pthread_create failed with code %d\n", code);
    }
    int input = getchar();
-   if(input == "\n"){
+   if(input == '\n'){
        pthread_cancel(child_thread);
    }
 
