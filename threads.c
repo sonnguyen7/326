@@ -26,6 +26,6 @@ int main(int argc, char *argv[]){
 
    sleep(5);
    printf("Parent thread is done sleeping 5 seconds.\n");
-   printf("Ending program.\n");
+   printf("Program ended.\n");
    return 0;
 }
