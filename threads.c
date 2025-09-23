@@ -20,6 +20,7 @@ int main(int argc, char *argv[]){
    int input = getchar();
    if(input == '\n'){
        pthread_cancel(child_thread);
+       printf("Child thread cancelled.\n");
    }
 
    sleep(5);
